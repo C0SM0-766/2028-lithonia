@@ -1,0 +1,492 @@
+if (!e.done) {
+e.done = true;
+
+campaignTrail_temp.global_parameter_json = [
+    {
+        "model": "campaign_trail.global_parameter",
+        "pk": 1,
+        "fields": {
+            "vote_variable": 1.125,
+            "max_swing": 0.12,
+            "start_point": 0.94,
+            "candidate_issue_weight": 10,
+            "running_mate_issue_weight": 3,
+            "issue_stance_1_max": -0.71,
+            "issue_stance_2_max": -0.3,
+            "issue_stance_3_max": -0.125,
+            "issue_stance_4_max": 0.125,
+            "issue_stance_5_max": 0.3,
+            "issue_stance_6_max": 0.71,
+            "global_variance": 0.01,
+            "state_variance": 0.005,
+            "question_count": 25,
+            "default_map_color_hex": "#C9C9C9",
+            "no_state_map_color_hex": "#999999"
+        }
+    }
+]
+
+campaignTrail_temp.election_json = [
+    {
+        "model": "campaign_trail.election",
+        "pk": 21,
+        "fields": {
+            "year": 2028,
+            "display_year": "2028 Lithonia",
+            "summary": "<div style=\"max-height:200px; overflow-y: auto;\"><p>In the 2028 Presidential Election, over a decade of political polarization is finally appearing to calm as the two candidates appear as if they are distancing away from the now deeply unpopular President Biden and Former President Trump.</p>\n<ul>\n<li>Josh Shapiro runs with the difficult task of keeping a party who has already had two terms in power. Despite being a swing state governor, he suffers from low personal enthusiasm and must try to distance himself from President Biden, whose poll numbers have collapsed following continued health episodes, which now appear to be heading for a much worse climax.\n</li>\n<li>Brian Kemp, despite a tough primary, enjoys a smooth campaign. He is well in the lead, and has the benefit of not being associated with the extreme-following of Former President Donald Trump (who is now imprisoned) while also presenting strong conservative policies. As long as he avoids any major controversies and can appease both wings of his party, he should have an easy road to the White House.\n</li>\n</ul></div>",
+            "image_url": "https://files.catbox.moe/b5bmrd.png",
+            "winning_electoral_vote_number": 270,
+            "advisor_url": "123",
+            "recommended_reading": "<ul>\n<li><a href=https://www.chicagotribune.com/opinion/editorials/ct-edit-chicago-tribune-biden-endorsement-20200925-lnyxsb5qvrftnjjmj3rnzj33jy-story.html>Our Case For Joe Biden</a></li>\n<li><a href=https://nationalinterest.org/feature/case-trump-166808>The Case For Trump</a></li>\n<li><a href=https://www.npr.org/2020/11/18/935730100/how-biden-won-ramping-up-the-base-and-expanding-margins-in-the-suburbs>How Biden Won: Ramping Up The Base And Expanding Margins In The Suburbs</a></li>\n<li><a href=https://www.prospectmagazine.co.uk/politics/donald-trump-joe-biden-us-election-almost-win-votes-concede>Why Did Trump Almost Win?</a></li>\n<li><a href=https://www.hoover.org/research/no-evidence-voter-fraud-guide-statistical-claims-about-2020-election>No Evidence For Voter Fraud: A Guide To Statistical Claims About The 2020 Election</a></li>\n</ul>",
+            "has_visits": 1,
+            "no_electoral_majority_image": "../static/images/2012-no-majority.jpg"
+        }
+    }
+],
+
+campaignTrail_temp.temp_election_list = [
+    {
+        "id": 21,
+        "year": 2028,
+        "is_premium": 0,
+        "display_year": "2028 Lithonia"
+    }
+]
+
+campaignTrail_temp.credits = "The Lithonia Team"
+
+campaignTrail_temp.candidate_json = [
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 300,
+        "fields": {
+            "first_name": "Josh",
+            "last_name": "Shapiro",
+            "election": 21,
+            "party": "Democratic",
+            "state": "Pennsylvania",
+            "priority": 1,
+            "description": "<div style=\"max-height:200px; overflow-y: auto;\"><p>Within a decade or two, someone like Josh Shapiro is bound to come along in the Democratic Party. A well-spoken, preachy, inspiring person who asks the people to believe in some new ideal. Hope for Bill Clinton. Change for Barack Obama. What does Shapiro have? The country is flailing. In a normal circumstance, the party in-charge for two terms would be swooning to have a candidate like him, as well as this country. Instead, as Biden grows more and more frail by the day, there’s no way anyone closely associated with the administration and D.C can present themselves as a viable nominee. And now Josh Shapiro stands as the new status quo.</p><p>Of course, with all the calamity in the party, the primaries shouldn’t pose a challenge to him. The Governor of Pennsylvania, after surviving the so-called “six year itch” is assuming a last-man standing vibe. Vice President Harris now assumes the role of a modern-day Dick Cheney, and is so unpopular that a 2028 run isn’t even being floated. All the big-wigs like Newsom, AOC, Pritzker, and Buttigieg know it’s probably best to hedge their bets on 2032. With all this in mind, can Josh Shapiro be the first in 40 years to keep a party in-charge for a third term? Or will he live up to his expectations?\n</p></div>",
+            "color_hex": "#2946af",
+            "secondary_color_hex": null,
+            "is_active": 1,
+            "image_url": "https://file.garden/aPF6sdg4jk-629YB/shapirocode1.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 10002,
+        "fields": {
+            "first_name": "Martin",
+            "last_name": "Heinrich",
+            "election": 21,
+            "party": "Democratic",
+            "state": "New Mexico",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://file.garden/aPF6sdg4jk-629YB/heinrichcode1.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>If you just needed to prove you're running a regular Democratic campaign, Martin Heinrich is your man. Being a U.S Senator from New Mexico, he could probably tuck away those five electoral votes for you. Though, it should be concerning if that’s one of the main benefits for him. Either way, he can help expand your coalition to hispanics, which seems to be a particular weak-spot the Republicans are having in the post-Trump era.</p><p>Of course, it’s worth remembering that Heinrich doesn’t add much policy-wise. He’s quite an establishment pick generally, having risen through the ranks a traditional way. But considering that he has also been a noted critic of Biden’s age, perhaps he might come with more sugar coating than you believe.</p>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 10003,
+        "fields": {
+            "first_name": "Chris",
+            "last_name": "Murphy",
+            "election": 21,
+            "party": "Democratic",
+            "state": "Connecticut",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://file.garden/aPF6sdg4jk-629YB/murphycode1.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>Not a very inspiring or bold choice, but it’s your decision. Chris Murphy is a U.S Senator from Connecticut, who has been serving in Congress before Biden even became Vice President. In all factuality, his picking does make sense. He’s toed the line and been a responsible liberal. He will surely assure progressives that you aren’t the warrior for their cause they hoped you would be, but at this point? Fuck them.</p><p>Just note that there won’t be any regionalism you stand to gain with Murphy, as he’s only two states away from you. And there’s also the fact that he won’t expand your coalition outside of the base you already seem to represent.</p>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 10004,
+        "fields": {
+            "first_name": "Jon",
+            "last_name": "Ossoff",
+            "election": 21,
+            "party": "Democratic",
+            "state": "Georgia",
+            "priority": 1,
+            "description": "<p>Go big or go home I suppose. Jon Ossoff is a one-term, former Senator from Georgia. He was defeated in 2026 among the slaughterhouse mid-terms. However, he still has motivation to continue working in the political scene, and was defeated recently enough to still be relevant in some sense. Of course, a recent defeat may also bog down a candidate.</p><p>There is also the fact that Ossoff realistically just seems to be a Southern version of yourself. He’s an Obama-esque speaker, part of the “White Dude” Democratic Base, and Jewish. Ossoff does come with many perks, and he does seem obvious, but you may want to look at him closer. Especially his ambitions.</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://file.garden/aPF6sdg4jk-629YB/ossoffcode1.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>Go big or go home I suppose. Jon Ossoff is a one-term, former Senator from Georgia. He was defeated in 2026 among the slaughterhouse mid-terms. However, he still has motivation to continue working in the political scene, and was defeated recently enough to still be relevant in some sense. Of course, a recent defeat may also bog down a candidate.</p><p>There is also the fact that Ossoff realistically just seems to be a Southern version of yourself. He’s an Obama-esque speaker, part of the “White Dude” Democratic Base, and Jewish. Ossoff does come with many perks, and he does seem obvious, but you may want to look at him closer. Especially his ambitions.</p>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 10005,
+        "fields": {
+            "first_name": "Pete",
+            "last_name": "Aguilar",
+            "election": 21,
+            "party": "Democratic",
+            "state": "California",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://file.garden/aPF6sdg4jk-629YB/aguilarcode1.jpg",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>Certainly an interesting decision on your part. Pete Aguilar a U.S Representative from California, and a quite impressive resume in the house indeed. Chairman of the House Democratic Caucus, and a leader in the New Democratic Coalition, he has previously served as Chair and Ranking Member of the House Appropriations Committee. If you're wishing to try to swoop in on Hispanic voters, then Aguilar is just the pick.</p><p>Though, the political credibility of nominating a U.S Representative is shaky, as the last time a VP Nominee wasn’t a Governor or Senator for anyone was nearly three decades ago. He may also be just another face of the D.C Establishment that has kept Biden afloat. If you can push all these things aside, then Aguilar is a nice pick to complement yourself.</p>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 301,
+        "fields": {
+            "first_name": "Brian",
+            "last_name": "Kemp",
+            "election": 21,
+            "party": "Republican",
+            "state": "Georgia",
+            "priority": 1,
+            "description": "<div style=\"max-height:200px; overflow-y: auto;\"><p>America is just not the same. At least it isn’t to Brian Kemp. Born right at the end of Georgia’s segregationist period, Kemp has now become the face of the Republican Party that dominated Georgia for a matter of decades, before fading into a brief period of irrelevancy. During the Biden Administration, he was the only survivor of the Republicans in Georgia. Two Democratic Senators, and a near-defeat in 2018 made the Georgia GOP weak. But he prevailed, and left the Governor’s Office with an approval rating nearing two-thirds. It was impossible to most analysts, he had engaged in public sparring matches with Trump, and even had a primary brought against him by MAGA (which he dominated).</p><p>He stands at the dawn of a new era for his Grand Old Party. Whisked away are the shackles of Trumpist Populism. A new dawn is being rung again, the old guard returns to their post. In order for him to truly leave his mark as a grand president, he must win his first grand campaign. And while it seems more than likely that he will be shepherded through the campaign season by easy circumstances, it’s not just fate, but the actions of himself that decide how easy that path is, if he even is able to trek it at all.</p></div>",
+            "color_hex": "#d33737",
+            "secondary_color_hex": null,
+            "is_active": 1,
+            "image_url": "https://files.catbox.moe/4nc6ug.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 10007,
+        "fields": {
+            "first_name": "Randy",
+            "last_name": "Feenstra",
+            "election": 21,
+            "party": "Republican",
+            "state": "Iowa",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#ff0000",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 10008,
+        "fields": {
+            "first_name": "J. D.",
+            "last_name": "Vance",
+            "election": 21,
+            "party": "Republican",
+            "state": "Ohio",
+            "priority": 1,
+            "description": "<p>only in ohio cuhhhhhh :skull:</p>",
+            "color_hex": "#ff0000",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 10009,
+        "fields": {
+            "first_name": "Andy",
+            "last_name": "Biggs",
+            "election": 21,
+            "party": "Republican",
+            "state": "Arizona",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#ff0000",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 10010,
+        "fields": {
+            "first_name": "Tom",
+            "last_name": "Cotton",
+            "election": 21,
+            "party": "Republican",
+            "state": "Arkansas",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 302,
+        "fields": {
+            "first_name": "Jeff",
+            "last_name": "Van Drew",
+            "election": 21,
+            "party": "Independent",
+            "state": "New Jersey",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#d49c48",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 303,
+        "fields": {
+            "first_name": "Paul",
+            "last_name": "Krugman",
+            "election": 21,
+            "party": "Independent",
+            "state": "New York",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#c05092",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    }
+]
+
+campaignTrail_temp.running_mate_json = [
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 121757,
+        "fields": {
+            "candidate": 301,
+            "running_mate": 10008
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 89608,
+        "fields": {
+            "candidate": 301,
+            "running_mate": 10009
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 87543,
+        "fields": {
+            "candidate": 300,
+            "running_mate": 10002
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 171748,
+        "fields": {
+            "candidate": 300,
+            "running_mate": 10003
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 87454,
+        "fields": {
+            "candidate": 300,
+            "running_mate": 10004
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 99911,
+        "fields": {
+            "candidate": 300,
+            "running_mate": 10005
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 82813,
+        "fields": {
+            "candidate": 301,
+            "running_mate": 10007
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 157101,
+        "fields": {
+            "candidate": 301,
+            "running_mate": 10010
+        }
+    }
+]
+
+campaignTrail_temp.opponents_default_json = [
+    {
+        "election": 21,
+        "candidates": [
+            300,
+            301,
+            302,
+            303
+        ]
+    }
+]
+
+campaignTrail_temp.opponents_weighted_json = [
+    {
+        "election": 21,
+        "candidates": [
+            300,
+            301,
+            302,
+            303
+        ]
+    }
+]
+
+jet_data = {
+    "headerColor": "#000080",
+    "windowColor": "#c1ffff",
+    "containerColor": "#ffffff",
+    "innerWindowColor": "#ff0000",
+    "bannerImageUrl": "https://files.catbox.moe/0oe9c6.png",
+    "backgroundImageUrl": "https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg",
+    "endingTextColor": "#000000",
+    "customQuote": "I feel liberated / Over-medicated",
+    "gameTitle": "Lithonia"
+}
+
+//#startcode
+
+
+corrr = `<img src='https://files.catbox.moe/ysu4ik.png' width='100%'/><span id="after_button"></span>`;
+if (gameWindow) {
+    // Set the dark border for the game window
+    gameWindow.style.border = "3px solid #595959";
+}
+
+// Set the dark, textured background image for the main game window
+$("#game_window")[0].style.background = "#2B9CD9";
+
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#000080";
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#dddddd";
+
+document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+
+$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
+
+$(".container")[0].style.backgroundColor = "#252525";
+
+document.getElementById("header").src = "https://file.garden/Zrv1pPC1HzBK0svl/LithoniaBanner.png";
+
+document.body.background = "https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg";
+
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#BF2C43!important;} .election_description_window {height: 100%!important;}</style>";
+
+
+//#endcode
+
+styling = document.createElement("style");
+document.head.appendChild(styling);
+
+styling.innerHTML = `
+#opponent_selection_id_back {
+    display: none;
+}
+`
+
+let z = new MutationObserver((mutationsList, observer) => {
+    let runningMateSummary = document.querySelector("#running_mate_summary");
+    if (runningMateSummary) {
+        $("#running_mate_id_button").click();
+        observer.disconnect()
+    }
+});
+
+
+z.observe(document, { subtree: true, childList: true });
+
+}
